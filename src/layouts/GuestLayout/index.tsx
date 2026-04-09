@@ -1,10 +1,10 @@
-import Navbar from "../../components/Navbar";
+import Navbar from "@/components/Navbar";
 import { Outlet } from "react-router";
 
 export default function GuestLayout() {
   return (
     <>
-      <div className="min-h-screen bg-zinc-950 text-white overflow-hidden">
+      <div className="min-h-screen overflow-hidden">
         <Navbar />
         <Outlet />
       </div>
