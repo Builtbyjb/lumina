@@ -3,48 +3,10 @@ import { Zap, Shield, Users, DollarSign, ArrowRight, CheckCircle } from "lucide-
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white overflow-hidden">
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-zinc-800">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center font-bold text-xl">
-              L
-            </div>
-            <span className="text-2xl font-semibold tracking-tight">Lumina</span>
-          </div>
-
-          <div className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#features" className="hover:text-violet-400 transition-colors">
-              Features
-            </a>
-            <a href="#pricing" className="hover:text-violet-400 transition-colors">
-              Pricing
-            </a>
-            <a href="#for-africa-asia" className="hover:text-violet-400 transition-colors">
-              For Africa & Asia
-            </a>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <button className="px-5 py-2 text-sm font-medium hover:bg-zinc-900 rounded-full transition-colors">
-              Log in
-            </button>
-            <button className="px-6 py-2 bg-white text-black font-semibold rounded-full hover:bg-zinc-200 transition-all flex items-center gap-2">
-              Get started free
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      </nav>
-
+    <>
       {/* Hero Section */}
       <section className="pt-32 pb-24 px-6 relative">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-700 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-emerald-400 text-sm font-medium">✦ Now live in 12 countries</span>
-          </div>
-
           <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
             Powerful LLMs for your team.
             <br />
@@ -176,6 +138,6 @@ export default function LandingPage() {
       <footer className="border-t border-zinc-800 py-12 px-6 text-center text-zinc-500 text-sm">
         © 2026 Lumina • Built for bold founders in Africa & Asia • Powered by open models on RunPod
       </footer>
-    </div>
+    </>
   );
 }
