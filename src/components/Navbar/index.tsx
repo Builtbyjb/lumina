@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -11,6 +12,9 @@ export default function Navbar() {
             <span onClick={() => navigate("/")} className="text-2xl font-semibold tracking-tight cursor-pointer">
               Lumina
             </span>
+          </div>
+          <div>
+            <Button onClick={() => navigate("/login")}>Login</Button>
           </div>
         </div>
       </nav>

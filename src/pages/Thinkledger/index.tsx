@@ -5,7 +5,7 @@ export default function Thinkledger() {
 
   return (
     <>
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center mt-36">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tighter leading-none mb-6">Thinkledger</h1>
 
         <p className="max-w-2xl mx-auto mb-10">

@@ -7,15 +7,14 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="pt-16 px-6 relative">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-none mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-none mb-6">
             Powerful LLMs for your team.
             <br />
             <span className="">Without the crazy bills.</span>
           </h1>
 
           <p className="max-w-2xl mx-auto mb-10">
-            Open-source models on lightning-fast GPUs. One API key per company. Employee credit limits and role controls
-            built-in.
+            Open-source models on lightning-fast GPUs. Employee credit limits and role controls built-in.
           </p>
         </div>
       </section>
