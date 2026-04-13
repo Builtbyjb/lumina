@@ -12,7 +12,7 @@ export default function LoginOTP() {
     if (value.length === 8) {
       console.log(otp);
       // Send verification request to backend
-      navigate("/apps/chat");
+      navigate("/home");
     }
   };
 
