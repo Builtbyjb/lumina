@@ -1,3 +1,5 @@
+import ComingSoon from "@/components/ComingSoon";
+
 export default function Docs() {
-  return <div>Docs</div>;
+  return <ComingSoon />;
 }

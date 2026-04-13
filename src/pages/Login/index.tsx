@@ -8,7 +8,6 @@ export default function Login() {
   return (
     <>
       <div className="max-w-5xl mx-auto mt-36">
-        {/* Back icon at the top */}
         <ArrowLeft
           size={36}
           className="mb-8 cursor-pointer opacity-75 hover:opacity-100 hover:scale-120 hover:transition-transform"

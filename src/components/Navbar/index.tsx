@@ -44,7 +44,7 @@ export default function Navbar() {
               <>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="outline" className="font-normal">
+                    <Button variant="default" className="font-normal">
                       <Avatar className="w-6 h-6">
                         <AvatarImage src="https://i.pravatar.cc/150?img=35" alt="placeholder" />
                         <AvatarFallback>ER</AvatarFallback>
