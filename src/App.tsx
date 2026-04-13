@@ -6,19 +6,27 @@ import GuestLayout from "./layouts/GuestLayout";
 import NotFound from "./components/NotFound";
 import Login from "./pages/Login";
 import RootLayout from "./layouts/RootLayout";
+import ProtectedLayout from "./layouts/ProtectedLayout";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <>
       <Routes>
         <Route element={<RootLayout />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/thinkledger" element={<Thinkledger />} />
+
           {/* Guest layout routes */}
           <Route path="/" element={<GuestLayout />}>
             <Route index element={<LandingPage />} />
           </Route>
 
-          <Route path="/thinkledger" element={<Thinkledger />} />
-          <Route path="/login" element={<Login />} />
+          {/* Protected layout routes */}
+          <Route path="/home" element={<ProtectedLayout />}>
+            <Route index element={<Dashboard />} />
+          </Route>
+
           {/* Not Found */}
           <Route path="*" element={<NotFound />} />
         </Route>

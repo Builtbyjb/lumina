@@ -24,7 +24,6 @@ export default function LoginForm() {
       onSubmit: formSchema,
     },
     onSubmit: async ({ value }) => {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log(value);
       setOtpIsSent(true);
       toast.success("You submitted your email", {
@@ -42,7 +41,7 @@ export default function LoginForm() {
 
   return (
     <>
-      <Card className="w-full sm:max-w-md bg-accent">
+      <Card className="w-full sm:max-w-md bg-primary border">
         <CardHeader>
           <CardTitle>Login</CardTitle>
         </CardHeader>
@@ -98,7 +97,7 @@ export default function LoginForm() {
             exit={{ opacity: 0, y: 16 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <Card className="w-full sm:max-w-md bg-accent">
+            <Card className="w-full sm:max-w-md bg-primary border">
               <CardHeader>
                 <CardTitle>Verify OTP</CardTitle>
               </CardHeader>
